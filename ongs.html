@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apoiar ONGs - Adote um Amigo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container"> <!-- Menu -->
+          <h1>Adote um Amigo</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html" >Início</a></li>
+              <li><a href="adotar.html" >Adotar</a></li>
+              <li><a href="ongs.html" class="active">Apoiar</a></li>
+              <li><a href="cadastrar.html">Cadastrar Pet</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+  <main class="container"> <!-- Banner Principal -->
+    <section class="hero">
+      <h2>Conheça e apoie ONGs do ABC</h2>
+      <p>Saiba mais sobre organizações que cuidam dos animais carentes da nossa região.</p>
+    </section>
+
+    <section class="cards-container"> <!-- Os Cards dessa pagina sao estaticos -->
+      <!-- Card ONG 1 -->
+      <article class="card">
+        <img src="imagens/ong1.jpg" alt="Logo ONG Amigos de Patinhas" />
+        <h3>Amigos de Patinhas</h3>
+        <p>ONG localizada em Santo André que resgata e cuida de cães e gatos abandonados.</p>
+        <button class="btn btn-apoio" onclick="abrirModal('Amigos de Patinhas')">Apoiar</button>
+      </article>
+
+      <!-- Card ONG 2 -->
+      <article class="card">
+        <img src="imagens/ong2.jpg" alt="Logo ONG ABC Animais" />
+        <h3>ABC Animais</h3>
+        <p>ONG de São Bernardo do Campo que promove campanhas de adoção e vacinação.</p>
+        <button class="btn btn-apoio" onclick="abrirModal('ABC Animais')">Apoiar</button>
+      </article>
+
+      <!-- Card ONG 3 -->
+      <article class="card">
+        <img src="imagens/ong3.jpg" alt="Logo ONG Coração Animal" />
+        <h3>Coração Animal</h3>
+        <p>ONG de São Caetano do Sul dedicada a abrigar animais vítimas de maus-tratos.</p>
+        <button class="btn btn-apoio" onclick="abrirModal('Coração Animal')">Apoiar</button>
+      </article>
+
+      <!-- Pode adicionar mais cards -->
+    </section>
+
+    <!-- Mapa do Google Maps -->
+  <div id="mapa">
+    <section class="mapa">
+      <h2>Localização das ONGs</h2>
+      <p>Veja no mapa abaixo ONGs de proteção animal na região do ABC Paulista:</p>
+        <div style="width: 100%; height: 400px; margin-top: 1rem;">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58448.542585040064!2d-46.55679071481668!3d-23.710483005557272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sONGS%20Animais%20ABC%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1751001072763!5m2!1spt-BR!2sbr" 
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+  </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h3>Como apoiar a ONG</h3>
+      <p id="modal-text">Escolha uma forma de apoiar.</p>
+      <div id="modal-options">
+        <!-- As informacoes desse modal vem do JavaScript -->
+      </div>
+      <button class="close-modal" onclick="fecharModal()" title="Fechar">❌</button>
+    </div>
+  </div>
+
+  
+
+
+  <footer>
+    <p>© 2025 Adote um Amigo | Projeto Extensionista - RU: 4303545</p>
+  </footer>
+  <script src="modalongs.js" defer></script>
+</body>
+
+</html>

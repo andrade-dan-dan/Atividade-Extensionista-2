@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adote um Amigo - Adoção de Animais</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header> <!-- Menu -->
+        <div class="container">
+          <h1>Adote um Amigo</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html" >Início</a></li>
+              <li><a href="adotar.html" class="active">Adotar</a></li>
+              <li><a href="ongs.html">Apoiar</a></li>
+              <li><a href="cadastrar.html">Cadastrar Pet</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+  <main class="container"> <!-- Banner principal da pagina -->
+    <section class="hero">
+      <h2>Encontre seu novo melhor amigo</h2>
+      <p>Conheça os pets disponíveis para adoção no ABC e dê um lar cheio de amor.</p>
+    </section>
+
+    <section class="cards-container"> <!-- Cards com as informações dos pets -->
+
+      <!-- Os cards são inseridos via JS aqui -->
+       
+    </section>
+  </main>
+
+  <!-- Modal para confirmação de adoção -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="close-modal" title="Fechar">❌</button>
+      <h3>Confirmar Adoção</h3>
+      <p id="modal-text">Deseja realmente adotar este pet?</p>
+      <button class="btn" id="confirm-adopt">Sim, quero adotar!</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Adote um Amigo | Projeto Extensionista - RU: 4303545</p>
+  </footer>
+
+  <!-- Importando JavaScript -->
+  <script src="adotar.js" defer></script>
+  <script src="modal.js" defer></script>
+</body>
+</html>
